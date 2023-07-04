@@ -1,0 +1,1580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="diario.xsl"?> 
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"> <!--rimanda al sito della tei-->
+    <teiHeader> <!-- intestazione -->
+        <fileDesc>
+            <!-- il fileDesc contiene una descrizione bibliografica sia di dati relativi al documento elettronico
+      sia della fonte originaria che stiamo codificando -->
+            <titleStmt>
+            <!-- sezione per la codifica del titolo dell'edizione  -->
+                <title xml:lang="it">Diari di Emanuele Artom</title>
+                <author>
+                    <persName ref="#EA"><!--persName viene usato per indicare un nome personale -->
+                        <forename>Emanuele</forename>
+                        <surname>Artom</surname>
+                    </persName>
+                </author>
+                <respStmt>
+                    <resp>
+                        Trascrizione del 
+                        <date when="2008">2008</date>
+                        a cura di:
+                    </resp>
+                    <persName ref="#GS">
+                        <forename>Guri</forename>
+                        <surname>Schwartz</surname>
+                    </persName>
+                </respStmt>
+            </titleStmt>
+          <editionStmt>
+            <!-- informazioni relative a un'edizione del testo -->
+            
+                <edition>
+                    Edizione Digitale del 
+                    <date when="06-2023">giugno 2023</date>
+                </edition>
+                <respStmt>
+                    <resp>Progetto universitario a cura di: </resp>
+                    <name xml:id="AMDG">Angelo Mario Del Grosso. </name>
+                </respStmt>
+                <respStmt>
+                    <resp>Codificato da:</resp>
+                    <persName xml:id="EG">
+                        <forename>Elia</forename>
+                        <surname>Grassini</surname>
+                    </persName>
+                    <persName xml:id="LV">
+                        <forename>Lorenzo</forename>
+                        <surname>Vero</surname>
+                    </persName>
+                </respStmt>
+          </editionStmt>
+
+            <!-- pubblicazioni testo -->
+            <publicationStmt>
+                <publisher>Università di Pisa</publisher>
+                <pubPlace>Pisa</pubPlace>
+                <availability status="free">
+                    <p>Opera ad accesso libero  </p>
+                </availability>
+                <date when="20023"> 2023 </date>
+            </publicationStmt>
+
+            
+            <sourceDesc>
+            <!-- informazioni fonte originale -->
+                <msDesc>
+                 <!-- descrizione del manoscritto -->
+                    <msIdentifier>
+                    <!-- identificatore del manoscritto, contiene le informazioni necessarie per identificarlo -->
+                        <placeName>
+                            <settlement type="city">Torino </settlement>
+                            <country key="IT" type="Italia">Italia</country>
+                        </placeName>
+                        <repository ref="http://digital-library.cdec.it/cdec-web/viewer/cdecxDamsHist003/IT-CDEC-ST0003-000006#page/1/mode/1up" role="library">CDEC Digital Library</repository>
+                        <collection>Diari di un partigiano ebreo</collection>
+                        <idno>TO01658860</idno> 
+                    </msIdentifier>
+                    <msContents>
+                    <!-- contenuto del manoscritto -->
+                        <msItem>
+                            <author ref="#EA">Emanuele Artom</author>
+                            <title xml:lang="it" type="main">Diari di un partigiano ebreo</title>
+                            <docDate> 1940-1944</docDate><!--contiene la data del documento-->
+                            <textLang mainLang="it">Italiano</textLang>
+                        </msItem>
+                    </msContents>
+
+                    <physDesc>
+                    <!-- descrizione fisica del manoscritto -->
+                        <objectDesc form="diary">
+                        <!-- objectDesc fornisce una descrizione delle componenti fisiche che costituiscono l'oggetto descritto
+                        l'attributo form indica la forma fisica del documento, in questo caso un foglio -->
+                            <supportDesc material="paper">
+                            <!-- supportDesc mi da una descrizione del supporto, ovvero raggruppa gli elementi che descrivono il supporto fisico
+                        della parte scritta di un manoscritto; l'attributo materia ci da un'informazione riguardante il materiale di cui è fatto il supporto, in questo caso carta -->
+                                <support>
+                                    Fogli di carta
+                                </support> 
+                                <extent>
+                                    Il diario è composto da 4 buste e 35 fascicoli
+                                </extent>
+                                <foliation>Le pagine non sono numerate, ma la seguenza è derivabile dal susseguirsi del discorso e dal fatto che molto pagine siano legate.</foliation>
+                                <condition>
+                                    <p>Il manoscritto è in buone condizioni, tranne alcuni danni ai margini dei fogli di carta.</p>
+                                </condition>
+                            </supportDesc>
+                            <layoutDesc> <!-- layoutDesc ci da una descrizione dell'impaginazione del manoscritto -->
+                                <layout columns="1" ruledLines="22">  <!--columns specifica il numero di colonne per pagina; ruledLines specifica il numero di righe per colonna -->
+                                    <p>Le pagine hanno circa 22 righe. </p>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc hands="1"><!-- contiene una descrizione dei diversi tipi di scrittura usati in un manoscritto -->
+                            <handNote>
+                                Queste pagine sono state scritte a mano dall'autore
+                                <persName ref="#EA">Emanuele Artom</persName>
+                            </handNote>
+                        </handDesc>
+                        <typeDesc>
+                            <p> Le pagine sono state scritte interamente in corsivo. Alcune sottolineature e cancellature rendono il testo non di immediata comprensione</p>
+                        </typeDesc>
+                        <additions> <!--contiene una descrizione di varie note o aggiunte extra alle parole o alle pagine -->
+                            <p>Sono presenti numerose note a margine</p>
+                        </additions>
+                    </physDesc>
+                    <history>
+                    <!-- raggruppa elementi che contengono la storia del manoscritto -->
+                        <summary>Il diario è composto da 4 buste e 35 fascicoli</summary><!--contiene un sommario degli aspetti e delle informazioni disponibili sul manoscritto-->
+                        <origin notBefore="01-1940" notAfter="09-1944"><!-- origin ci da informazioni riguardanti l'origine del manoscritto; notAfter specifica l'ultima data possibile per quel determinato evento -->
+
+                            <p>
+                                Si tratta di una raccolta degli scritti autografi di  
+                                <persName ref="#EA">Emanuele Artom</persName>
+                                accompagnati dalla lettera originale della madre 
+                                <persName ref="#ASA">Amalia Segre Artom</persName>
+                                riportante l'epigrafe "Alla mia morte questo plico deve essere consegnato al Centro di documentazione ebraica"
+                            </p>
+                        </origin>
+                        <acquisition>
+                        <!--contiene informazioni relative al processo di acquisizione di un manoscritto -->
+                            <p>
+                                Donato per volontà della madre
+                                <persName ref="#ASA">Amalia Segre Artom</persName>
+                            
+                                alla
+                                <orgName>
+                                    <roleName type="library">
+                                     CDEC digital library
+                                        
+                                    </roleName>
+                                </orgName>
+                                .
+                            </p>
+                        </acquisition>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- lingue utilizzate -->
+            <langUsage>
+                <language ident="it">Italiano</language>
+            </langUsage>
+            <textDesc> <!--obbligatori tag channel,constitution,derivation,domain,factuality,interaction,preparedness,purpose-->
+
+              <!-- fornisce una descrizione del testo -->
+              <channel mode="w"/> <!-- channel descrive il mezzo o canale attraverso cui un testo è trasmesso o vissuto;
+              l'attributo mode specifica il modo del canale rispetto a parlato e scritto: in questo caso "written", ovvero scritto  -->
+              <constitution type="single" /> <!-- constituiton descrive la composizione interna;
+              l'attributo type indica come era costituito il testo: in questo caso "single", ovvero un unico testo completo -->
+              <derivation type="original" /> <!-- derivation descrive la natura e la portata dell'originalità di questo testo: in questo caso si tratta di un testo originale -->
+              <domain type="testimony" /> <!--domain descrive il più importante contesto per il quale è stato creato il manoscritto: in questo caso si tratta di una testimonianza -->
+              <factuality type="fact" /> <!-- factiality indica se e quanto il testo può essere considerato fantasioso; in questo caso è da considerarsi interamente fattuale e informativo -->
+              <interaction type="partial" active="singular"  /> <!-- interaction descrive la natura, la centralità e il grado di ogni interazione fra coloro che producono e coloro che sperimentano il testo;
+              in questo caso abbiamo type="partial", quindi è prevista qualche interazione perziale;
+              active="singular", quindi abbiamo un singolo partecipante attivo-->
+              <preparedness type="none"/>
+              <purpose type="report" degree="low" /> <!-- purpose indica lo scopo comunicativo del testo, in questo caso si tratta di un diario quindi riporta i fatti -->
+            </textDesc>
+      <settingDesc>
+        <!-- descrive le impostazioni all'interno delle quali avviene un'interazione linguistica -->
+        <setting>
+          <name>
+            Testi registrati nella Biblioteca digitale CDEC
+          </name>
+          <time>
+            <date when="01-1940">Gennaio 1940</date>
+          </time>
+        </setting>
+      </settingDesc>
+        </profileDesc>
+
+    </teiHeader>
+
+<facsimile> <!--contains a representation of some written source in the form of a set of images rather than as transcribed or encoded text.-->
+<surface n="1" xml:id="pag80"><!-- surface definisce una superficie scritta come uno spazio di coordinate bidimensionale,
+            raggruppando opzionalmente una o più rappresentazioni grafiche di quello spazio,
+            zone di interesse all'interno di quello spazio e trascrizioni della scrittura al loro interno -->
+<!--pagina 80-->
+<graphic url='pagina-80.jpg' width='769.4px' height='1024.4px' /> <!-- graphic indica la posizione di un'immagine, un'illustrazione o un diagramma incorporati -->
+<!--linee-->
+<zone ulx="95" uly="84" lrx="677" lry="118" xml:id="pag80-lin1"/><!-- zone definisce qualsiasi area bidimensionale all'interno di un elemento di superficie -->
+<zone ulx="97" uly="125" lrx="632" lry="154" xml:id="pag80-lin2"/>
+<zone ulx="95" uly="162" lrx="663" lry="190" xml:id="pag80-lin3"/>
+<zone ulx="93" uly="202" lrx="651" lry="230" xml:id="pag80-lin4"/>
+<zone ulx="94" uly="237" lrx="673" lry="277" xml:id="pag80-lin5"/>
+<zone ulx="94" uly="280" lrx="648" lry="313" xml:id="pag80-lin6"/>
+<zone ulx="93" uly="319" lrx="659" lry="350" xml:id="pag80-lin7"/>
+<zone ulx="93" uly="355" lrx="652" lry="389" xml:id="pag80-lin8"/>
+<zone ulx="92" uly="394" lrx="635" lry="427" xml:id="pag80-lin9"/>
+<zone ulx="92" uly="437" lrx="673" lry="468" xml:id="pag80-lin10"/>
+<zone ulx="91" uly="470" lrx="672" lry="512" xml:id="pag80-lin11"/>
+<zone ulx="93" uly="517" lrx="659" lry="550" xml:id="pag80-lin12"/>
+<zone ulx="89" uly="559" lrx="631" lry="589" xml:id="pag80-lin13"/>
+<zone ulx="91" uly="596" lrx="645" lry="621" xml:id="pag80-lin14"/>
+<zone ulx="92" uly="632" lrx="667" lry="663" xml:id="pag80-lin15"/>
+<zone ulx="91" uly="667" lrx="640" lry="702" xml:id="pag80-lin16"/>
+<zone ulx="91" uly="706" lrx="638" lry="738" xml:id="pag80-lin17"/>
+<zone ulx="93" uly="748" lrx="674" lry="781" xml:id="pag80-lin18"/>
+<zone ulx="90" uly="787" lrx="673" lry="821" xml:id="pag80-lin19"/>
+<zone ulx="91" uly="828" lrx="676" lry="857" xml:id="pag80-lin20"/>
+<zone ulx="95" uly="861" lrx="668" lry="892" xml:id="pag80-lin21"/>
+<zone ulx="97" uly="900" lrx="693" lry="939" xml:id="pag80-lin22"/>
+
+</surface>
+
+<surface n="2" xml:id="pag81">
+<!--pagina 81-->
+<graphic url='pagina-81.jpg' width='770.4px' height='1024.4px'/>
+<!--linee-->
+<zone ulx="93" uly="80" lrx="678" lry="127" xml:id="pag81-lin1"/>
+<zone ulx="95" uly="129" lrx="678" lry="163" xml:id="pag81-lin2"/>
+<zone ulx="97" uly="166" lrx="646" lry="199" xml:id="pag81-lin3"/>
+<zone ulx="98" uly="202" lrx="660" lry="236" xml:id="pag81-lin4"/>
+<zone ulx="99" uly="242" lrx="648" lry="278" xml:id="pag81-lin5"/>
+<zone ulx="99" uly="284" lrx="671" lry="314" xml:id="pag81-lin6"/>
+<zone ulx="101" uly="319" lrx="649" lry="357" xml:id="pag81-lin7"/>
+<zone ulx="99" uly="361" lrx="629" lry="393" xml:id="pag81-lin8"/>
+<zone ulx="90" uly="401" lrx="661" lry="437" xml:id="pag81-lin9"/>
+<zone ulx="97" uly="441" lrx="641" lry="469" xml:id="pag81-lin10"/>
+<zone ulx="100" uly="476" lrx="640" lry="507" xml:id="pag81-lin11"/>
+<zone ulx="100" uly="510" lrx="652" lry="551" xml:id="pag81-lin12"/>
+<zone ulx="98" uly="554" lrx="656" lry="588" xml:id="pag81-lin13"/>
+<zone ulx="95" uly="592" lrx="693" lry="633" xml:id="pag81-lin14"/>
+<zone ulx="94" uly="636" lrx="671" lry="670" xml:id="pag81-lin15"/>
+<zone ulx="91" uly="677" lrx="689" lry="717" xml:id="pag81-lin16"/>
+<zone ulx="100" uly="710" lrx="638" lry="741" xml:id="pag81-lin17"/>
+<zone ulx="96" uly="746" lrx="663" lry="780" xml:id="pag81-lin18"/>
+<zone ulx="94" uly="788" lrx="664" lry="819" xml:id="pag81-lin19"/>
+<zone ulx="98" uly="826" lrx="659" lry="861" xml:id="pag81-lin20"/>
+<zone ulx="96" uly="866" lrx="588" lry="899" xml:id="pag81-lin21"/>
+<zone ulx="104" uly="906" lrx="698" lry="935" xml:id="pag81-lin22"/>
+
+</surface>
+
+<surface n="3" xml:id="pag82">
+<!--pagina 82-->
+<graphic url='pagina-82.jpg' width='770.4px' height='1024.4px' />
+<!--linee-->
+<zone ulx="88" uly="86" lrx="648" lry="121" xml:id="pag82-lin1"/>
+<zone ulx="88" uly="124" lrx="640" lry="158" xml:id="pag82-lin2"/>
+<zone ulx="89" uly="169" lrx="669" lry="201" xml:id="pag82-lin3"/>
+<zone ulx="91" uly="208" lrx="677" lry="239" xml:id="pag82-lin4"/>
+<zone ulx="89" uly="246" lrx="638" lry="274" xml:id="pag82-lin5"/>
+<zone ulx="89" uly="278" lrx="668" lry="316" xml:id="pag82-lin6"/>
+<zone ulx="91" uly="322" lrx="655" lry="352" xml:id="pag82-lin7"/>
+<zone ulx="90" uly="358" lrx="661" lry="387" xml:id="pag82-lin8"/>
+<zone ulx="89" uly="399" lrx="661" lry="428" xml:id="pag82-lin9"/>
+<zone ulx="89" uly="438" lrx="678" lry="466" xml:id="pag82-lin10"/>
+<zone ulx="89" uly="477" lrx="664" lry="504" xml:id="pag82-lin11"/>
+<zone ulx="90" uly="513" lrx="662" lry="545" xml:id="pag82-lin12"/>
+<zone ulx="91" uly="550" lrx="645" lry="587" xml:id="pag82-lin13"/>
+<zone ulx="91" uly="591" lrx="659" lry="630" xml:id="pag82-lin14"/>
+<zone ulx="93" uly="633" lrx="618" lry="662" xml:id="pag82-lin15"/>
+<zone ulx="97" uly="670" lrx="657" lry="702" xml:id="pag82-lin16"/>
+<zone ulx="97" uly="708" lrx="661" lry="744" xml:id="pag82-lin17"/>
+<zone ulx="97" uly="751" lrx="639" lry="781" xml:id="pag82-lin18"/>
+<zone ulx="94" uly="791" lrx="617" lry="819" xml:id="pag82-lin19"/>
+<zone ulx="101" uly="826" lrx="652" lry="857" xml:id="pag82-lin20"/>
+<zone ulx="92" uly="862" lrx="635" lry="898" xml:id="pag82-lin21"/>
+<zone ulx="95" uly="904" lrx="640" lry="937" xml:id="pag82-lin22"/>
+
+</surface>
+
+<surface n="4" xml:id="pag83">
+<!--pagina 83-->
+<graphic url='pagina-83.jpg' width='770.4px' height='1024.4px' />
+<!--linee-->
+<zone ulx="99" uly="85" lrx="661" lry="112" xml:id="pag83-lin1"/>
+<zone ulx="97" uly="127" lrx="660" lry="153" xml:id="pag83-lin2"/>
+<zone ulx="98" uly="163" lrx="694" lry="198" xml:id="pag83-lin3"/>
+<zone ulx="97" uly="201" lrx="655" lry="236" xml:id="pag83-lin4"/>
+<zone ulx="97" uly="238" lrx="731" lry="280" xml:id="pag83-lin5"/>
+<zone ulx="94" uly="283" lrx="721" lry="312" xml:id="pag83-lin6"/>
+<zone ulx="97" uly="321" lrx="702" lry="351" xml:id="pag83-lin7"/>
+<zone ulx="95" uly="361" lrx="700" lry="394" xml:id="pag83-lin8"/>
+<zone ulx="93" uly="399" lrx="707" lry="431" xml:id="pag83-lin9"/>
+<zone ulx="95" uly="436" lrx="726" lry="473" xml:id="pag83-lin10"/>
+<zone ulx="96" uly="479" lrx="677" lry="506" xml:id="pag83-lin11"/>
+<zone ulx="97" uly="512" lrx="699" lry="544" xml:id="pag83-lin12"/>
+<zone ulx="94" uly="550" lrx="693" lry="584" xml:id="pag83-lin13"/>
+<zone ulx="96" uly="590" lrx="658" lry="624" xml:id="pag83-lin14"/>
+<zone ulx="93" uly="629" lrx="671" lry="662" xml:id="pag83-lin15"/>
+<zone ulx="97" uly="670" lrx="701" lry="702" xml:id="pag83-lin16"/>
+<zone ulx="97" uly="711" lrx="644" lry="736" xml:id="pag83-lin17"/>
+<zone ulx="99" uly="744" lrx="646" lry="776" xml:id="pag83-lin18"/>
+<zone ulx="97" uly="782" lrx="681" lry="818" xml:id="pag83-lin19"/>
+<zone ulx="95" uly="827" lrx="686" lry="858" xml:id="pag83-lin20"/>
+<zone ulx="96" uly="866" lrx="737" lry="894" xml:id="pag83-lin21"/>
+<zone ulx="100" uly="904" lrx="684" lry="931" xml:id="pag83-lin22"/>
+<zone ulx="97" uly="948" lrx="641" lry="978" xml:id="pag83-lin23"/>
+
+</surface>
+
+<surface n="5" xml:id="pag84">
+<!--pagina 84-->
+<graphic url='Pagina-84.jpg' width='769.4px' height='1024.4px'  />
+<!--linee-->
+<zone ulx="93" uly="81" lrx="679" lry="118" xml:id="pag84-lin1"/>
+<zone ulx="92" uly="125" lrx="651" lry="157" xml:id="pag84-lin2"/>
+<zone ulx="90" uly="165" lrx="634" lry="195" xml:id="pag84-lin3"/>
+<zone ulx="87" uly="201" lrx="678" lry="236" xml:id="pag84-lin4"/>
+<zone ulx="89" uly="242" lrx="665" lry="272" xml:id="pag84-lin5"/>
+<zone ulx="93" uly="280" lrx="657" lry="316" xml:id="pag84-lin6"/>
+<zone ulx="92" uly="318" lrx="643" lry="351" xml:id="pag84-lin7"/>
+<zone ulx="97" uly="358" lrx="671" lry="390" xml:id="pag84-lin8"/>
+<zone ulx="89" uly="393" lrx="653" lry="425" xml:id="pag84-lin9"/>
+<zone ulx="89" uly="429" lrx="672" lry="465" xml:id="pag84-lin10"/>
+<zone ulx="87" uly="480" lrx="677" lry="508" xml:id="pag84-lin11"/>
+<zone ulx="85" uly="514" lrx="669" lry="545" xml:id="pag84-lin12"/>
+<zone ulx="91" uly="553" lrx="677" lry="586" xml:id="pag84-lin13"/>
+<zone ulx="84" uly="592" lrx="675" lry="624" xml:id="pag84-lin14"/>
+<zone ulx="87" uly="629" lrx="661" lry="660" xml:id="pag84-lin15"/>
+<zone ulx="88" uly="664" lrx="673" lry="704" xml:id="pag84-lin16"/>
+<zone ulx="86" uly="710" lrx="645" lry="743" xml:id="pag84-lin17"/>
+<zone ulx="87" uly="747" lrx="636" lry="779" xml:id="pag84-lin18"/>
+<zone ulx="97" uly="780" lrx="706" lry="820" xml:id="pag84-lin19"/>
+<zone ulx="86" uly="823" lrx="651" lry="859" xml:id="pag84-lin20"/>
+<zone ulx="98" uly="863" lrx="647" lry="890" xml:id="pag84-lin21"/>
+<zone ulx="94" uly="899" lrx="704" lry="944" xml:id="pag84-lin22"/>
+
+</surface>
+
+</facsimile>
+
+<text xml:lang="it" xml:id="Pagina80-84" subtype="diary">
+    <body>
+        <div type="pagina" n="80">
+            <pb n="80" facs="#P80" />
+            <!-- Page beginning pagina 80-->
+            <ab n="1">
+            <lb xml:id="pag80-linea1" n="1" facs="#pag80-lin1" /><!--lb sta per line break e indica l'inizio di una nuova riga, a cui associo un id e un numero -->
+            Azione 
+            <pc type="full stop">.</pc> <!--pc si usa per la punteggiatura-->
+            Ha delle ottime possibi 
+            <pc force="weak">=</pc>
+            <lb xml:id="pag80-linea2" n="2" facs="#pag80-lin2" break="no" />
+            lità di prevalere 
+            <pc type="semi colon">;</pc>
+             interpreta
+            <lb xml:id="pag80-linea3" n="3" facs="#pag80-lin3" />
+            le necessità economiche e fisio
+            <pc force="weak">=</pc>
+            <lb xml:id="pag80-linea4" n="4" facs="#pag80-lin4" break="no" />
+            logiche della nazione 
+            <pc type="comma">,</pc>
+            meglio
+            <lb xml:id="pag80-linea5" n="5" facs="#pag80-lin5" />
+            del 
+            <term ref="#comunismo">
+                <abbr type="suspension"><!-- term viene utilizzato per indicare un termine tecnico, abbr per un'abbreviazione che può essere di vari tipi,expan lo uso per indicare la parola estesa, ex per indicare le lettere che il codificatore ha dovuto aggiungere e am per indicare la punteggiatura dell'abbreviazione-->
+                    com
+                </abbr>
+                <expan>
+                    <ex>unismo</ex>
+                </expan>
+            </term>
+            <pc type="comma">,</pc>
+            che è un partito mon 
+            <pc force="weak">=</pc>
+            <lb xml:id="pag80-linea6" n="6" facs="#pag80-lin6" break="no" />
+            diale
+            <pc type="comma">,</pc>
+            può avere con sé
+            <pc type="comma">,</pc>
+            come 
+            <lb xml:id="pag80-linea7" n="7" facs="#pag80-lin7" />
+            programma
+            <pc type="comma">,</pc>
+            <term ref="#Borghesi">borghesi</term>
+            <pc type="comma">,</pc>
+            <term ref="#Contadini">conta
+            <lb xml:id="pag80-linea8" n="8" facs="#pag80-lin8" />
+            dini </term>
+            <pc type="comma">,</pc>
+            <term ref="#Intellettuali">intellettuali</term>
+            <pc type="comma">,</pc>
+            ma bisogna
+            <lb xml:id="pag80-linea9" n="9" facs="#pag80-lin9" />
+            avere degli uomini e bisogna
+            <lb xml:id="pag80-linea10" n="10" facs="#pag80-lin10" />
+            aggiungere
+            <pc type="comma">,</pc>
+            confrontiamo l'attività di
+            <lb xml:id="pag80-linea11" n="11" facs="#pag80-lin11" />
+            Barge con quella di
+            <placeName ref="#TorrePellice">Torre Pellice</placeName>
+            <pc type="comma">,</pc>
+            <lb xml:id="pag80-linea12" n="12" facs="#pag80-lin12" />
+            <del rend="overstrike">penso</del> 
+            inoltre ho rammentato che
+            <lb xml:id="pag80-linea13" n="13" facs="#pag80-lin13" />
+            quest’estate avremo costruito un 
+            <lb xml:id="pag80-linea14" n="14" facs="#pag80-lin14" />
+            centro in 
+            <placeName ref="#Castelnuovo">Castelnuovo</placeName>
+             e che 
+            <pc type="comma">,</pc>
+            <lb xml:id="pag80-linea15" n="15" facs="#pag80-lin15" />
+            mentre il 
+            <term ref="#PartitodAzione">
+                <abbr type="acronym">
+                    P
+                     <am>.</am>
+                    d
+                    <am>.</am>
+                    A
+                    <am>.</am>
+                </abbr>
+                <expan>
+                    <ex>Partito d'Azione</ex>
+                </expan>
+            </term>
+             lo ha abban
+            <pc force="weak">=</pc>
+            <lb xml:id="pag80-linea16" n="16" facs="#pag80-lin16" break="no" />
+            donato
+            <pc type="comma">,</pc>
+            i 
+            <term ref="#comunisti">
+                <abbr type="suspension">
+                    <am>.</am>
+                </abbr>
+                <expan>
+                    <ex>unisti</ex>
+                </expan>
+            </term>
+            ci sostituivano
+            <pc type="full stop">.</pc>
+            </ab>
+            <ab n="2" >
+            <lb xml:id="pag80-linea17" n="17" facs="#pag80-lin17" />
+            <choice>
+                <abbr type="suspension"> 
+                    B
+                    <am>.</am>
+                </abbr>
+                <expan>
+                    <ex>?</ex>
+                </expan>
+            </choice>
+            mi ha detto che ieri sera si 
+            <lb xml:id="pag80-linea18" n="18" facs="#pag80-lin18" />
+            sarebbe deciso 
+            <del rend="overstrike">il</del>
+            <pc type="comma">,</pc>
+            con 
+            <unclear reason="illegible">Org.</unclear>
+            <pc type="comma">,</pc>
+            la mia 
+            <lb xml:id="pag80-linea19" n="19" facs="#pag80-lin19" />
+            destinazione
+            <pc type="colon">:</pc>
+            o al comando con
+            <lb xml:id="pag80-linea20" n="20" facs="#pag80-lin20" />
+            incarichi politici
+            <pc type="comma">,</pc>
+            e 
+            <del rend="overstrike">nella</del>
+            <add resp="#EA" place="above">
+            in mia
+            </add>
+             valle 
+            <lb xml:id="pag80-linea21" n="21" facs="#pag80-lin21" />
+            vicina come commissario
+            <pc type="full stop">.</pc>
+            </ab>
+            <ab n="3">
+            Il Bello
+            <lb xml:id="pag80-linea22" n="22" facs="#pag80-lin22" />
+            è che mi ritroverei di fronte a 
+             <persName>Fiore</persName>
+            <pc type="full stop">.</pc>
+            </ab>
+              <!-- Page beginning pagina 81-->
+            </div>
+            <div type="pagina" n="81">
+            <pb n="81" facs="#P81" />
+            <ab n="4">
+            <lb xml:id="pag81-linea1" n="1" facs="#pag81-lin1" />
+            Sono molto irritati coi
+            <term ref="#comunisti">
+                <abbr type="suspension">
+                    com
+                    <am>.</am>
+                </abbr>
+                <expan>
+                    <ex>unisti</ex>
+                </expan>
+            </term>
+            e preve 
+            <pc force="weak">=</pc>
+            <lb xml:id="pag81-linea2" n="2" facs="#pag81-lin2" break="no" />
+            dono una prossima completa mis
+            <pc force="weak">=</pc>
+            <lb xml:id="pag81-linea3" n="3" facs="#pag81-lin3" break="no" />
+            sione 
+            <pc type="comma">,</pc>
+            non solo dal 
+            <term ref="#PartitodAzione">
+                <abbr type="acronym">
+                    P
+                    <am>.</am>
+                    d
+                    <am>.</am>
+                    A
+                    <am>.</am>
+                </abbr>
+                <expan>
+                    <ex>Partito d'Azione</ex>
+                </expan>
+            </term>
+            <pc type="comma">,</pc>
+            ma 
+            <lb xml:id="pag81-linea4" n="4" facs="#pag81-lin4" />
+            dal Fronte Nazionale
+            <pc type="full stop">.</pc>
+            </ab>
+            <ab n="5" >
+            La cosa mi
+            <lb xml:id="pag81-linea5" n="5" facs="#pag81-lin5" />
+            comprende perché il 
+            <term ref="#comunismo">
+                <abbr type="suspension">
+                    com
+                </abbr>
+                <expan>
+                    <ex>unismo</ex>
+                </expan>
+            </term> 
+            è una
+            <lb xml:id="pag81-linea6" n="6" facs="#pag81-lin6" />
+            <term ref="#Religione">religione</term>
+             e come ogni 
+            <term ref="#Religione">religione</term>
+            sin
+            <pc force="weak">=</pc>
+            <lb xml:id="pag81-linea7" n="7" facs="#pag81-lin7" break="no" />
+            ceramente professata
+            <pc type="comma">,</pc>
+            è intolle
+            <pc force="weak">=</pc>
+            <lb xml:id="pag81-linea8" n="8" facs="#pag81-lin8" break="no" />
+            rante
+            <pc type="full stop">.</pc>
+            </ab>
+            <ab n="6">
+            Un azzardo duraturo e
+            <lb xml:id="pag81-linea9" n="9" facs="#pag81-lin9" />
+            fatalmente e logicamente impossi
+            <pc force="weak">=</pc>
+            <lb xml:id="pag81-linea10" n="10" facs="#pag81-lin10" break="no" />
+            bile
+            <pc type="full stop">.</pc>
+            </ab>
+            <ab n="7">
+            Con quest’oggi
+            <choice>
+                <abbr type="suspension">
+                    G
+                    <am>.</am>
+                </abbr>
+                <expan>
+                    <ex>?</ex>
+                </expan>
+            </choice>
+            mi ha
+            <lb xml:id="pag81-linea11" n="11" facs="#pag81-lin11" />
+            raccontato che il 
+            <term ref="#Tenente">tenente</term> 
+             <persName>
+                <forename>Carlo</forename>
+             </persName> 
+            <lb xml:id="pag81-linea12" n="12" facs="#pag81-lin12" />
+            <unclear reason="illegible" cert="low">Lanzi</unclear>
+            <pc type="comma">,</pc>
+            in val voracità ha di
+            <pc force="weak">=</pc>
+            <lb xml:id="pag81-linea13" n="13" facs="#pag81-lin13" break="no" />
+            chiarato di non aderire più
+            <lb xml:id="pag81-linea14" n="14" facs="#pag81-lin14" />
+            alle Bande di Bargi
+            <pc type="comma">,</pc>
+            sua moglie 
+            <lb xml:id="pag81-linea15" n="15" facs="#pag81-lin15" />
+            è del 
+            <term ref="#PartitodAzione">
+                <abbr type="acronym">
+                    P
+                    <am>.</am>
+                    d
+                    <am>.</am>
+                    A
+                    <am>.</am>
+                </abbr>
+                <expan>
+                    <ex>Partito d'Azione</ex>
+                </expan>
+            </term>
+            <pc type="comma">,</pc>
+            bisogna vedere se
+            <lb xml:id="pag81-linea16" n="16" facs="#pag81-lin16" />
+            passa a noi o a 
+            <term ref="#Badoglio">
+             <persName ref="Badoglio">
+                <surname> Badoglio </surname>
+              </persName>
+            </term>
+            <pc type="semi colon">;</pc>
+            oggi
+            <lb xml:id="pag81-linea17" n="17" facs="#pag81-lin17" />
+            c’è stato un consiglio dei 
+            <term ref="#comunisti">
+                <abbr type="suspension">
+                    com
+                    <am>.</am>
+                </abbr>
+                <expan>
+                    <ex>unisti</ex>
+                </expan>
+            </term>
+            <lb xml:id="pag81-linea18" n="18" facs="#pag81-lin18" />
+            durato molte ore
+            <pc type="Full stop">.</pc>
+            </ab>
+            <ab n="8">
+            Così quando
+            <lb xml:id="pag81-linea19" n="19" facs="#pag81-lin19" />
+            ho salutato 
+             <persName>
+                <forename>Bal</forename>
+             </persName>
+            <pc type="comma">,</pc>
+            dicendogli che 
+            <lb xml:id="pag81-linea20" n="20" facs="#pag81-lin20" />
+            raggiungevo il 
+            <term ref="#PartitodAzione">
+                <abbr type="acronym">
+                    P
+                    <am>.</am>
+                    d
+                    <am>.</am>
+                    A
+                    <am>.</am>
+                </abbr>
+                <expan>
+                    <ex>Partito d'Azione</ex>
+                </expan>
+            </term>
+            <pc type="comma">,</pc>
+            mi ha
+            <lb xml:id="pag81-linea21" n="21" facs="#pag81-lin21" />
+            risposto
+            <pc type="colon">:</pc>
+            <said direct="false"> come ti invidio
+            <pc type="exclamation mark">!</pc>
+            </said>
+            </ab>
+            <ab n="9">
+            <pc type="full stop">.</pc>
+            <lb xml:id="pag81-linea22" n="22" facs="#pag81-lin22" />
+            Naturalmente l’ho  
+            <del rend="overstrike">preso</del>
+            consigliato
+            </ab>
+            </div>
+            
+           <div type="pagina" n="82">       
+            <pb n="82" facs="#P82" />
+              <!-- Page beginning pagina 82-->
+            <ab n="9">
+            <lb xml:id="pag82-linea1" n="1" facs="#pag82-lin1" />
+            
+            di rimanere sià perché oggi bisogna 
+            <lb xml:id="pag82-linea2" n="2" facs="#pag82-lin2" />
+            soprattutto cacciare i 
+            <term ref="#tedeschi">Tedeschi</term>
+            <pc type="comma">,</pc>
+            ma
+            <lb xml:id="pag82-linea3" n="3" facs="#pag82-lin3" />
+            perché l’unico moodo che la 
+            <term ref="#Banda">banda</term>
+            <lb xml:id="pag82-linea4" n="4" facs="#pag82-lin4" />
+            non sià del tutto 
+            <term ref="#comunisti">
+                <abbr type="suspension">
+                 com
+                <am>.</am>
+                </abbr>
+                <expan>
+                    <ex>unista</ex>
+                </expan>
+            </term>
+            è che gli <term ref="#ufficiali"> uffi
+            <pc force="weak">=</pc> 
+            <lb xml:id="pag82-linea5" n="5" facs="#pag82-lin5" break="no" />
+            ciali </term> 
+            del nostro 
+            <term ref="#Partito">partito</term> 
+            non la
+            <lb xml:id="pag82-linea6" n="6" facs="#pag82-lin6" />
+            abbandonino
+            <pc type="comma">,</pc>
+            sià perché cinsegna 
+            <lb xml:id="pag82-linea7" n="7" facs="#pag82-lin7" />
+            opere sempre dalla parte della 
+            <lb xml:id="pag82-linea8" n="8" facs="#pag82-lin8" />
+            ragione
+            <pc type="full stop">.</pc>
+            </ab>
+            <ab n="10">
+            Gli ho 
+            <choice>
+                <corr cert="high">solleticato</corr>
+                <sic>solleticata</sic>
+            </choice>
+            l’am
+            <pc force="weak">=</pc>
+            <lb xml:id="pag82-linea9" n="9" facs="#pag82-lin9" break="no" />
+            bizione dicendogli
+            <pc type="colon">:</pc>
+            Gli 
+            <choice>
+                <corr cert="high">aeroplani</corr>
+                <sic>areoplani</sic>
+            </choice>
+            di
+            <lb xml:id="pag82-linea10" n="10" facs="#pag82-lin10" />
+            <term ref="#Mussolini">
+                <abbr type="suspension">
+                 M
+                <am>.</am>
+                </abbr>
+                <expan>
+                    <ex>ussolini</ex>
+                </expan> 
+            </term>
+            li hai incendiati tu
+            <pc type="comma">,</pc>
+            non 
+            <persName>
+                <forename>Pietro</forename>
+            </persName> 
+            <lb xml:id="pag82-linea11" n="11" facs="#pag82-lin11" />
+            né 
+             <persName>
+              <forename>Fiore</forename>
+             </persName>
+            <pc type="full stop">.</pc>
+            </ab>
+            <ab n="11"> 
+            La 
+            <term ref="#Banda">banda</term>
+            è tua
+            <pc type="comma">,</pc>
+            hai
+            <lb xml:id="pag82-linea12" n="12" facs="#pag82-lin12" />
+            colleghi e coi migliori 
+            <add resp="#EA" place="above">
+            soldati
+            </add>
+            <term ref="#ufficiali">ufficiali</term> 
+            <lb xml:id="pag82-linea13" n="13" facs="#pag82-lin13" />
+            ci raggiungerai
+            <pc type="comma">,</pc>
+            se sarà ne
+            <pc force="weak">=</pc>
+            <lb xml:id="pag82-linea14" n="14" facs="#pag82-lin14" break="no" />
+            cessario
+            <pc type="comma">,</pc>
+            se scoppierà la guerra 
+            <lb xml:id="pag82-linea15" n="15" facs="#pag82-lin15" />
+            civile
+            <pc type="comma">,</pc>
+            ma speriamo che non
+            <lb xml:id="pag82-linea16" n="16" facs="#pag82-lin16" />
+            sia necessario
+            <pc type="comma">,</pc>
+            speriamo che non 
+            <lb xml:id="pag82-linea17" n="17" facs="#pag82-lin17" />
+            scoppi
+            <pc type="full stop">.</pc>
+            </ab>
+            <ab n="12">
+            Ad ogni modo teniti sempre
+            <lb xml:id="pag82-linea18" n="18" facs="#pag82-lin18" />
+            in contatto con
+            <choice>
+                <abbr type="suspension" >
+                  G
+                  <am>.</am>
+                </abbr>
+                <expan>
+                    <ex>?</ex>
+                </expan>
+            </choice>
+            che ora rap
+            <pc force="weak">=</pc>
+            <lb xml:id="pag82-linea19" n="19" facs="#pag82-lin19" break="no" />
+            presenta il nostro 
+            <term ref="#Movimento">movimento</term> 
+            <pc type="full stop">.</pc>
+            </ab>
+            <ab n="13">
+            <lb xml:id="pag82-linea20" n="20" facs="#pag82-lin20" />
+            Mentre così parlavo sentivo un
+            <lb xml:id="pag82-linea21" n="21" facs="#pag82-lin21" />
+            certo rimorso
+            <pc type="comma">,</pc>
+            sentivo che se 
+            <lb xml:id="pag82-linea22" n="22" facs="#pag82-lin22" />
+            i 
+            <term ref="#comunisti">
+                <abbr type="suspension">
+                 com
+                <am>.</am>
+                </abbr>
+                <expan>
+                    <ex>unisti</ex>
+                </expan>
+            </term>
+            mi avessero ascoltato
+            </ab>
+            </div>
+            <div type="pagina" n="83">
+
+            <pb n="83" facs="#P83" />
+              <!-- Page beginning pagina 83-->
+            <ab n="13">
+            <lb xml:id="pag83-linea1" n="1" facs="#pag83-lin1" />
+            e cacciato via avrei dovuto 
+            <choice>
+              <corr cert="high">dar</corr>
+              <sic>dal</sic>
+            </choice>
+            <lb xml:id="pag83-linea2" n="2" facs="#pag83-lin2" />
+            loro ragione
+            <pc type="comma">,</pc>
+            ma mi avevano e
+            <pc force="weak">=</pc>
+            <lb xml:id="pag83-linea3" n="3" facs="#pag83-lin3" break="no" />
+            sasperato le intemperanze di 
+             <persName>
+              <forename>Gina</forename>
+            </persName>
+            <pc type="comma">,</pc>
+            <lb xml:id="pag83-linea4" n="4" facs="#pag83-lin4" />
+            che pochi minuti prima aveva 
+            <lb xml:id="pag83-linea5" n="5" facs="#pag83-lin5" />
+            dichiarato a 
+            <choice>
+                <abbr type="suspension">
+                   G
+                  <am>.</am>
+                </abbr>
+                <expan>
+                    <ex>?</ex>
+                </expan>
+            </choice>
+             e a me che se avessero
+            <lb xml:id="pag83-linea6" n="6" facs="#pag83-lin6" />
+            i 
+            <term ref="#comunisti">
+                <abbr type="suspension">
+                 com
+                <am>.</am>
+                </abbr>
+                <expan>
+                    <ex>unisti</ex>
+                </expan>
+            </term>
+            preso il 
+            <term ref="#Potere">potere</term>
+             e noi avessimo
+            <lb xml:id="pag83-linea7" n="7" facs="#pag83-lin7" />
+            espresso opinioni contrarie sarebbe 
+            <lb xml:id="pag83-linea8" n="8" facs="#pag83-lin8" />
+            stato giusto sopprimerci
+            <pc type="full stop">.</pc>
+            </ab>
+            <ab n="14">
+            Anche 
+            <choice>
+                <abbr type="suspension">
+                  G
+                  <am>.</am>
+                </abbr>
+                <expan>
+                    <ex>?</ex>
+                </expan>
+            </choice>
+            <pc type="comma">,</pc> 
+            <lb xml:id="pag83-linea9" n="9" facs="#pag83-lin9" />
+            ne è rimasto molto colpito
+            <pc type="comma">,</pc>
+            quando
+            <lb xml:id="pag83-linea10" n="10" facs="#pag83-lin10" />
+            gli riferii il discorso fatto a 
+             <persName ref="#TenenteCarlo">
+              <surname>Balestri</surname>
+             </persName>
+            <lb xml:id="pag83-linea11" n="11" facs="#pag83-lin11" />
+            mi diede ragione e osservò che in 
+            <lb xml:id="pag83-linea12" n="12" facs="#pag83-lin12" />
+            questo mese avevo fatto al 
+            <term ref="#comunismo">
+                <abbr type="suspension">
+                com
+                </abbr>
+                <expan>
+                    <ex>unismo</ex>
+                </expan>
+            </term>
+            più
+            <lb xml:id="pag83-linea13" n="13" facs="#pag83-lin13" />
+            male di quanto bene avessero fatto
+            <lb xml:id="pag83-linea14" n="14" facs="#pag83-lin14" />
+            insieme 
+            <persName>
+              <forename>Fiore</forename>
+            </persName>
+            <pc type="comma">,</pc>
+             <persName>
+              <forename>Antonio</forename>
+            </persName>
+            <pc type="comma">,</pc>
+            <persName>
+              <forename>Pietro</forename>
+             </persName> 
+             e
+            <lb xml:id="pag83-linea15" n="15" facs="#pag83-lin15" />
+            <persName>
+              <forename>Giovanni</forename>
+            </persName> 
+            messi insieme
+            <pc type="colon">:</pc>
+            avevo 
+            <lb xml:id="pag83-linea16" n="16" facs="#pag83-lin16" />
+            fatto comprendere agli 
+            <term ref="#ufficiali">ufficiali</term>
+             che 
+            <lb xml:id="pag83-linea17" n="17" facs="#pag83-lin17" />
+            c'erano altri movimenti e li 
+            <lb xml:id="pag83-linea18" n="18" facs="#pag83-lin18" />
+            avevo chiamati a me
+            <pc type="full stop">.</pc>
+            <add resp="#EA" place="right">
+            fui da catalizzatore
+            </add>
+            </ab>
+            <ab n="15">
+            <choice>
+                <abbr type="acronym">
+                  Q
+                  <am>.</am>
+                  T
+                  <am>.</am>
+                  P
+                  <am>.</am>
+                </abbr>
+                <expan>
+                    <ex>?</ex>
+                </expan>
+            </choice>
+            <lb xml:id="pag83-linea19" n="19" facs="#pag83-lin19" />
+            si temeva che 
+            <choice>
+                <abbr type="suspension">
+                  G
+                  <am>.</am>
+                </abbr>
+                <expan>
+                    <ex>?</ex>
+                </expan>
+            </choice>
+            divenisse
+            <term ref="#comunisti">
+                <abbr type="suspension">
+                 com
+                <am>.</am>
+                </abbr>
+                <expan>
+                    <ex>unista</ex>
+                </expan>
+            </term>
+            e mi 
+            <lb xml:id="pag83-linea20" n="20" facs="#pag83-lin20" />
+            mi si era raccomandato di occuparmi
+            <lb xml:id="pag83-linea21" n="21" facs="#pag83-lin21" />
+            di lui
+            <pc type="semicolon">;</pc>
+            oggi diceva
+            <pc type="colon">:</pc>
+            <said direct="false"> meglio un <!--il tag said accompagnato dall'attributo direct indica un discorso diretto o indiretto il valore false indica che il discorso è indiretto-->
+            <term ref="#Governo"> governo </term>
+            <lb xml:id="pag83-linea22" n="22" facs="#pag83-lin22" />
+            liberale di 
+            <term ref="#Destra">destra</term>
+            <pc type="exclamation mark">!</pc>
+            </said> 
+            </ab>
+            <ab n="16">
+            Ne son contento 
+            <lb xml:id="pag83-linea23" n="23" facs="#pag83-lin23" />
+            perchè è il mio migliore amico
+            <pc type="full stop">.</pc>
+            </ab>
+            </div>
+
+            <div type="pagina" n="84">
+            <pb n="84" facs="#P84" />
+            <ab n="17">
+              <!-- Page beginning pagina 84-->
+            <lb xml:id="pag84-linea1" n="1" facs="#pag84-lin1" />
+            <term ref="#Ebrei">Ebrei</term>
+            riesce male
+            <pc type="full stop">.</pc>
+            </ab>
+            <ab n="18">
+            Di amici
+            <lb xml:id="pag84-linea2" n="2" facs="#pag84-lin2" />
+            o parenti 
+            <del rend="overstrike">meno</del>
+            <add resp="#EA" place="above">
+            è
+            </add>
+            stato arrestato 
+            <persName>
+              <forename>Aldo</forename>
+            </persName>
+            <lb xml:id="pag84-linea3" n="3" facs="#pag84-lin3" />
+            con la famiglia
+            <pc type="comma">,</pc>
+            mentre cercava 
+            <lb xml:id="pag84-linea4" n="4" facs="#pag84-lin4" />
+            di sconfinare in 
+            <placeName ref="#Svizzera">Svizzera</placeName>
+            e che
+            <pc type="comma">,</pc>
+            mi 
+            <lb xml:id="pag84-linea5" n="5" facs="#pag84-lin5" />
+            risulti
+            <pc type="comma">,</pc>
+            basta
+            <pc type="full stop">.</pc>
+            </ab>
+            <ab n="19">
+            Poi so di una 
+            <term ref="#Ebrei">Ebrea</term>
+            <pc type="comma">,</pc>
+            <lb xml:id="pag84-linea6" n="6" facs="#pag84-lin6" />
+            vedova di un 
+            <term ref="#Cristiano"> Cristiano</term>
+            <pc type="comma">,</pc>
+            <del rend="overstrike">
+            <gap reason="illegible" extent="5" unit="charts" />
+            </del>
+            <lb xml:id="pag84-linea7" n="7" facs="#pag84-lin7" />
+            convertita
+            <pc type="comma">,</pc>
+            che fu arrestata e poi
+            <lb xml:id="pag84-linea8" n="8" facs="#pag84-lin8" />
+            liberata
+            <pc type="full stop">.</pc>
+            </ab>
+            <ab n="20">
+            Pare che a  
+            <choice>
+              <abbr type="suspension">
+                  <placeName ref="#TorrePellice">Torre P</placeName>
+                  <am>.</am>
+              </abbr>
+              <expan>
+                  <ex>ellice</ex>
+              </expan>
+            </choice>
+            un signor
+            <lb xml:id="pag84-linea9" n="9" facs="#pag84-lin9" />
+            <persName>
+              <surname>Treves</surname>
+            </persName>
+            <pc type="comma">,</pc>
+            arrestato fu poi liberato e con- 
+            <lb xml:id="pag84-linea10" n="10" facs="#pag84-lin10" />
+            finato in una sua villa
+            <pc type="comma">,</pc>
+            probabilmente
+            <lb xml:id="pag84-linea11" n="11" facs="#pag84-lin11" />
+            perché, molto uno
+            <pc type="comma">,</pc>
+            pagò
+            <pc type="full stop">.</pc>
+            </ab>
+            <ab n="21">
+            Invece a 
+            <placeName ref="#TorrePellice">
+                <abbr type="acronym">
+                T
+                <am>.</am>
+                P
+                <am>.</am>
+                </abbr>
+                <expan>
+                    <ex>Torre Pellice</ex>
+                </expan>
+            </placeName>
+            <lb xml:id="pag84-linea12" n="12" facs="#pag84-lin12" />
+            due disgraziati furono 
+            <del rend="overstrike">le</del>
+            vittime
+            <pc type="colon">:</pc>
+            <lb xml:id="pag84-linea13" n="13" facs="#pag84-lin13" />
+            una vecchia signora
+            <pc type="comma">,</pc>
+            che
+            <pc type="comma">,</pc>
+            disperata
+            <pc type="comma">,</pc>
+            <lb xml:id="pag84-linea14" n="14" facs="#pag84-lin14" />
+            si uccise con il veleno e un vecchio che 
+            <lb xml:id="pag84-linea15" n="15" facs="#pag84-lin15" />
+            ora è in carcere
+            <pc type="full stop">.</pc>
+            </ab>
+            <ab n="22">
+            Come sempre sono
+            <lb xml:id="pag84-linea16" n="16" facs="#pag84-lin16" />
+            colpiti i vecchi
+            <pc type="comma">,</pc>
+            i poveri
+            <pc type="comma">,</pc>
+            gli incapaci
+            <lb xml:id="pag84-linea17" n="17" facs="#pag84-lin17" />
+            di aggiustarsi
+            <pc type="comma">,</pc>
+            perchè privi di de
+            <pc force="weak">=</pc>
+            <lb xml:id="pag84-linea18" n="18" facs="#pag84-lin18" break="no" />
+            naro, di relazioni
+            <pc type="comma">,</pc>
+            di 
+            <term ref="#Duttilità"> duttilità </term>
+            <pc type="full stop">.</pc>
+            </ab>
+            <ab n="23">
+            <lb xml:id="pag84-linea19" n="19" facs="#pag84-lin19" />
+            Una forma crudele di selezione della
+            <lb xml:id="pag84-linea20" n="20" facs="#pag84-lin20" />
+            specie
+            <pc type="full stop">.</pc>
+            </ab>
+            <ab n="24">
+            La Riscossa
+            <pc type="comma">,</pc>
+            <unclear reason="illegible">giornalaio</unclear>
+            <term ref="#Fascista"> fa
+            <pc force="weak">=</pc> 
+            <lb xml:id="pag84-linea21" n="21" facs="#pag84-lin21" break="no" />
+            scista</term> 
+            di 
+            <placeName ref="#Torino">Torino</placeName>
+            <pc type="comma">,</pc>
+            osserva che gli 
+            <term ref="#Ebrei">
+                <abbr type="suspension">
+                 E
+                <am>.</am>
+                </abbr>
+                <expan>
+                    <ex>brei</ex>
+                </expan>
+            </term>
+            <lb xml:id="pag84-linea22" n="22" facs="#pag84-lin22" />
+            ci sono
+            <pc type="comma">,</pc>
+            ma non si vedono
+            <pc type="colon">:</pc>
+            ma non è possibile
+            </ab>
+        </div>
+
+   </body> 
+   <back><!--vocabolario del testo-->
+      <list type="terminologia">
+        <label><!--contiene le parti del testo da specificare-->
+          <term xml:id="comunismo" xml:lang="it">Comunismo</term>
+          <term ref="#comunismo" xml:lang="it"></term>
+        </label>
+        <item>
+          <gloss target="#comunismo" xml:lang="it" source="https://www.treccani.it/enciclopedia/comunismo_%28Enciclopedia-Italiana%29/">
+            Per 
+            <hi rend="bold"> Comunismo</hi>
+            s'intende un sistema sociale caratterizzato dalla comunione di beni fra gli associati: concetto affine a quelli di socialismo e collettivismo, in quanto esprimano esistenza o esigenza della proprietà e gestione sociale o collettiva dei mezzi di produzione;
+          </gloss>
+        </item>
+
+        <label>
+          <term xml:id="comunisti" xml:lang="it">Comunisti</term>
+          <term ref="#comunisti" xml:lang="it" ></term>
+        </label>
+        <item>
+          <gloss target="#comunisti" xml:lang="it" source="https://www.treccani.it/vocabolario/comunista1/">
+            Per 
+            <hi rend="bold"> Comunisti</hi>
+            si intende chi professa il comunismo, o è iscritto a un partito o a un movimento che ne propugna la dottrina, oppure fa, o faceva, parte di paesi in cui i principî del comunismo sono, o erano, attuati in sistema politico
+          </gloss>
+        </item>
+
+        <label>
+          <term xml:id="PartitodAzione" xml:lang="it">Partito d'Azione</term>
+          <term ref="#PartitodAzione" xml:lang="it"></term>
+        </label>
+        <item>
+          <gloss target="#PartitodAzione" xml:lang="it" source="https://www.treccani.it/enciclopedia/partito-d-azione_(Dizionario-di-Storia)#:~:text=Partito%20politico%20italiano%2C%20costituitosi%20nel,antitesi%20di%20liberalismo%20e%20socialismo">
+            Il
+            <hi rend="bold">Partito d'Azione</hi>
+            è un partito politico italiano, costituitosi nel 1942, per la confluenza di Giustizia e libertà e di gruppi liberalsocialisti e repubblicani, allo scopo di combattere il fascismo e di superare l’antitesi di liberalismo e socialismo.
+          </gloss>
+        </item>
+
+        <label>
+          <term xml:id="Ebrei" xml:lang="it">Ebrei</term>
+          <term ref="#Ebrei" xml:lang="it"></term>
+        </label>
+        <item>
+          <gloss target="#Ebrei" xml:lang="it" source="https://www.treccani.it/enciclopedia/ricerca/ebrei/">
+            Per 
+            <hi rend="bold"> Ebrei</hi>
+            si intendono quelle persone appartenenti al popolo ebraico o comunque legate all’identità religiosa e storica israelitica.
+          </gloss>
+        </item>
+
+        <label>
+          <term xml:id="Partito" xml:lang="it">Partito</term>
+          <term ref="#Partito" xml:lang="it"></term>
+        </label>
+        <item>
+          <gloss target="#Partito" xml:lang="it" source="https://www.treccani.it/enciclopedia/partito">
+            Il
+            <hi rend="bold">Partito</hi>
+            è un'organizzazione che persegue l’obiettivo della gestione del potere politico mediante il processo di competizione elettorale ovvero attraverso la designazione diretta dei propri membri nei ruoli di governo.
+          </gloss>
+        </item>
+
+        <label>
+          <term xml:id="Borghesi" xml:lang="it">Borghesi</term>
+          <term ref="#Borghesi" xml:lang="it"></term>
+        </label>
+        <item>
+          <gloss target="#Borghesi" xml:lang="it" source="https://www.treccani.it/vocabolario/borghese/">
+            I
+            <hi rend="bold">borghesi</hi>
+            sono persone appartenenti alla borghesia come entità sociale, politica, economica
+        </gloss>
+        </item>
+
+        <label>
+          <term xml:id="Contadini" xml:lang="it">Contadini</term>
+          <term ref="#Contadini" xml:lang="it"></term>
+        </label>
+        <item>
+          <gloss target="#Contadini" xml:lang="it" source="https://www.treccani.it/enciclopedia/contadino/">
+            I
+            <hi rend="bold">contadini</hi>
+            sono persone che lavorano la terra, per conto proprio o per conto del proprietario del terreno
+        </gloss>
+        </item>
+
+        <label>
+          <term xml:id="Intellettuali" xml:lang="it">Intellettuali</term>
+          <term ref="#Intellettuali" xml:lang="it"></term>
+        </label>
+        <item>
+          <gloss target="#Intellettuali" xml:lang="it" source="https://www.treccani.it/enciclopedia/intellettuale">
+            Gli
+            <hi rend="bold">intellettuali</hi>
+            sono un gruppo o élite formato da individui di diversa classe sociale, accomunati da una cultura o un’istruzione superiori (accademici, artisti, giuristi, scrittori, professionisti), i quali godono della pubblica stima e sono considerati depositari di valori culturali universali che trascendono gli interessi particolari e i pregiudizi partigiani
+        </gloss>
+        </item>
+
+        <label>
+          <term xml:id="tedeschi" xml:lang="it">Tedeschi</term>
+          <term ref="#tedeschi" xml:lang="it"></term>
+        </label>
+        <item>
+          <gloss target="#tedeschi" xml:lang="it" source="https://www.treccani.it/enciclopedia/wehrmacht/">
+            Con
+            <hi rend="bold">Tedeschi</hi>
+            si intende la Wehrmacht, forze armate della Germania del periodo nazista (dal 1935)
+        </gloss>
+        </item>
+
+        <label>
+          <term xml:id="ufficiali" xml:lang="it">Ufficiali</term>
+          <term ref="#ufficiali" xml:lang="it"></term>
+        </label>
+        <item>
+          <gloss target="#ufficiali" xml:lang="it" source="https://www.treccani.it/enciclopedia/intellettuale">
+            Gli
+            <hi rend="bold">ufficiali</hi>
+            sono persone incaricata di pubblico ufficio e del personale delle forze armate o dei corpi militarizzati, avente il grado da sottotenente (guardiamarina per la marina) in su e analogamente di coloro che sono preposti a dirigere i vari servizi sulle navi mercantili. 
+        </gloss>
+        </item>
+
+        <label>
+          <term xml:id="religione" xml:lang="it">Religione</term>
+          <term ref="#Religione" xml:lang="it"></term>
+        </label>
+        <item>
+          <gloss target="#Religione" xml:lang="it" source="https://www.treccani.it/enciclopedia/religione">
+            Per
+            <hi rend="bold">religione</hi>
+            si intende un complesso di credenze, sentimenti, riti che legano un individuo o un gruppo umano con ciò che esso ritiene sacro, in particolare con la divinità, oppure il complesso dei dogmi, dei precetti, dei riti che costituiscono un dato culto religioso  
+        </gloss>
+        </item>
+
+        <label>
+          <term xml:id="tenente" xml:lang="it">Tenente</term>
+          <term ref="#Tenente" xml:lang="it"></term>
+        </label>
+        <item>
+          <gloss target="#Tenente" xml:lang="it" source="https://www.treccani.it/enciclopedia/tenente/">
+            Per
+            <hi rend="bold">tenente</hi>
+            si intende il grado della gerarchia militare cui compete il comando di un plotone o di unità equivalente; è il secondo grado della gerarchia degli ufficiali e con il sottotenente costituisce la categoria degli ufficiali subalterni.
+        </gloss>
+        </item>
+
+        <label>
+          <term xml:id="partito" xml:lang="it">Partito</term>
+          <term ref="#Partito" xml:lang="it"></term>
+        </label>
+        <item>
+          <gloss target="#Partito" xml:lang="it" source="https://www.treccani.it/enciclopedia/partito">
+            Per
+            <hi rend="bold">partito</hi>
+            si intende l'organizzazione che persegue l’obiettivo della gestione del potere politico mediante il processo di competizione elettorale ovvero quando non entrano regole democratiche di competizione elettorale  attraverso la designazione diretta dei propri membri nei ruoli di governo.
+        </gloss>
+        </item>
+
+        <label>
+          <term xml:id="banda" xml:lang="it">Banda</term>
+          <term ref="#Banda" xml:lang="it"></term>
+        </label>
+        <item>
+          <gloss target="#Banda" xml:lang="it" source="https://www.treccani.it/enciclopedia/banda_res-2224fafc-1d58-11de-bb24-0016357eee51/">
+            Per
+            <hi rend="bold">banda</hi>
+            si intende l'insegna militare che distingue i soldati di uno stesso corpo da quelli di altri Stati o di altri corpi; per estensione raggruppamento di soldati raccolti sotto un’unica insegna o di volontari, che esercitano la guerriglia. 
+        </gloss>
+        </item>
+
+        <label>
+          <term xml:id="movimento" xml:lang="it">Movimento</term>
+          <term ref="#Movimento" xml:lang="it"></term>
+        </label>
+        <item>
+          <gloss target="#Movimento" xml:lang="it" source="https://www.treccani.it/enciclopedia/movimento/">
+            Per
+            <hi rend="bold">movimento</hi>
+            si intende qualsiasi forma di comportamento diffuso che si produce fra una pluralità di individui per reazione a particolari stimoli, situazioni, avvenimenti, pressioni sociali.
+        </gloss>
+        </item>
+
+        <label>
+          <term xml:id="mussolini" xml:lang="it">Mussolini</term>
+          <term ref="#Mussolini" xml:lang="it"></term>
+        </label>
+        <item>
+          <gloss target="#Mussolini" xml:lang="it" source="https://www.treccani.it/enciclopedia/benito-mussolini/">
+            Per
+            <hi rend="bold">Mussolini</hi>
+            si intende Benito Mussolini, uomo politico (Dovia di Predappio 1883 - Giulino di Mezzegra, Dongo, 1945). Socialista, si andò staccando dal partito, fino a fondare i Fasci da combattimento (1919). Figura emergente nell’ambito del neoformato Partito nazionale fascista, subito dopo la “marcia su Roma” (1922) venne incaricato dal re della formazione del governo, instaurando nel giro di pochi anni un regime dittatoriale.
+        </gloss>
+        </item>
+
+        <label>
+          <term xml:id="potere" xml:lang="it">Potere</term>
+          <term ref="#Potere" xml:lang="it"></term>
+        </label>
+        <item>
+          <gloss target="#Potere" xml:lang="it" source="https://www.treccani.it/enciclopedia/potere/">
+            Per
+            <hi rend="bold">potere</hi>
+            si intende una relazione fra individui, in taluni casi diretta e in taluni casi mediata da organizzazioni e istituzioni; il p. è inoltre connesso alla libertà nel senso che, essendo incorporata nel p. un’ineliminabile componente coercitiva, l’esercizio del p. comporta sempre una riduzione della libertà altrui. 
+        </gloss>
+        </item>
+
+        <label>
+          <term xml:id="governo" xml:lang="it">Governo</term>
+          <term ref="#Governo" xml:lang="it"></term>
+        </label>
+        <item>
+          <gloss target="#Governo" xml:lang="it" source="https://www.treccani.it/enciclopedia/potere/">
+            Per
+            <hi rend="bold">governo</hi>
+            si intende un organo complesso posto al vertice dell’intero apparato amministrativo dello Stato.
+        </gloss>
+        </item>
+
+        <label>
+          <term xml:id="destra" xml:lang="it">Destra</term>
+          <term ref="#Destra" xml:lang="it"></term>
+        </label>
+        <item>
+          <gloss target="#Destra" xml:lang="it" source="https://www.treccani.it/enciclopedia/destra/">
+            Per
+            <hi rend="bold">destra</hi>
+            nel parlamento si intende, settori dell’emiciclo che sono a d. del presidente (il cui seggio è posto di fronte all’emiciclo stesso). Per estensione, insieme dei deputati che occupano quei settori e i partiti o i gruppi politici da essi rappresentati. Il significato politico di d., nato insieme a quello di sinistra durante la Rivoluzione francese, ha subito molte variazioni, a seconda dei tempi e dei paesi, ma indica in genere un orientamento moderato, conservatore o, nelle sue punte più estreme, reazionario.
+        </gloss>
+        </item>
+
+        <label>
+          <term xml:id="cristiano" xml:lang="it">Cristiano</term>
+          <term ref="#Cristiano" xml:lang="it"></term>
+        </label>
+        <item>
+          <gloss target="#Cristiano" xml:lang="it" source="https://www.treccani.it/enciclopedia/cristiano/">
+            Per
+            <hi rend="bold">Cristiano</hi>
+            si intende chi professa la religione cristiana. Il nome non fu adottato dagli stessi seguaci di Cristo, che nel Nuovo Testamento si chiamano "fedeli, eletti, santi", e anche nei testi patristici più antichi il termine ricorre piuttosto raramente
+        </gloss>
+        </item>
+
+        <label>
+          <term xml:id="duttilità" xml:lang="it">Duttilità</term>
+          <term ref="#Duttilità" xml:lang="it"></term>
+        </label>
+        <item>
+          <gloss target="#Duttilità" xml:lang="it" source="https://www.treccani.it/enciclopedia/duttilita">
+            Per
+            <hi rend="bold">duttilità</hi>
+            si intende la proprietà caratteristica di un materiale duttile, cioè che può subire, sotto l’azione di forze di trazione, deformazioni plastiche rilevanti in modo da poter essere ridotto con facilità in fili sottili.
+        </gloss>
+        </item>
+
+        <label>
+          <term xml:id="fascista" xml:lang="it">Fascista</term>
+          <term ref="#Fascista" xml:lang="it"></term>
+        </label>
+        <item>
+          <gloss target="#Fascista" xml:lang="it" source="https://www.treccani.it/enciclopedia/fascismo/">
+            Per
+            <hi rend="bold">fascista</hi>
+            si intende un seguace o fautore del fascismo; iscritto al Partito Nazionale Fascista, movimento politico italiano fondato nel 1919 da B. Mussolini, giunto al potere nel 1922 e rimasto al governo dell’Italia fino al 1943.
+        </gloss>
+        </item>
+
+        <label>
+          <term xml:id="badoglio" xml:lang="it">Badoglio</term>
+          <term ref="#Badoglio" xml:lang="it"></term>
+        </label>
+        <item>
+          <gloss target="#Badoglio" xml:lang="it" source="https://www.treccani.it/enciclopedia/pietro-badoglio/">
+            Per
+            <hi rend="bold">Badoglio</hi>
+            intendiamo Badoglio, Pietro. Generale italiano (Grazzano Monferrato 1871 - ivi 1956). Capo di S. M. generale sin dal 1925, condusse la vittoriosa campagna in Etiopia (1935-36). Si dimise durante la seconda guerra mondiale dopo l'insuccesso in Grecia. Chiamato dal re a sostituire B. Mussolini (25 luglio 1943), concluse con gli Alleati l'armistizio (3 sett. 1943). Dopo la liberazione di Roma lasciò il governo a I. Bonomi (10 giugno 1944). 
+        </gloss>
+        </item>
+
+     </list>
+
+    <!--riferimenti bibliografici-->
+      <listBibl>
+        <bibl xml:lang="it">
+          <title>Diari di un partigiano ebreo</title>
+          <author>
+            <persName>
+              <forename>Guri</forename>
+              <surname>Schwartz</surname>
+            </persName>
+          </author>
+          <pubPlace>
+            <placeName ref="#Torino">Torino</placeName>
+          </pubPlace>
+          <publisher>Bollati Boringhieri</publisher>
+          <date when="2009">2008</date>
+        </bibl>
+
+        <bibl xml:lang="it">
+          <title type="main">La moralità armata</title>
+          <title type="sub">Studi su Emanuele Artom (1915-1944), , a cura di A. Cavaglion</title>
+
+          <author>
+            <persName ref="#EA">
+              <forename>Emanuele</forename>
+              <surname>Artom</surname>
+            </persName>
+          </author>
+          <author>
+            <persName>
+              <forename>Alberto</forename>
+              <surname>Cavaglion</surname>
+            </persName>
+          </author>
+          <pubPlace>
+            <placeName ref="#Milano">Milano</placeName>
+          </pubPlace>
+          <publisher>Franco Angeli</publisher>
+          <date when="1993">1993</date>
+        </bibl>
+
+        <bibl xml:lang="it">
+          <title type="main">Emanuele Artom, Diari: gennaio 1940 - febbraio 1944</title>
+          <title type="sub">a cura di Paola De Benedetti ed Eloisa Ravenna</title>
+          <author>
+            <persName>
+              <forename>Paola</forename>
+              <surname>De Benedetti</surname>
+            </persName>
+          </author>
+          <author>
+          <persName>
+              <forename>Eloise</forename>
+              <surname>Ravenna</surname>
+            </persName>
+          </author>
+          <pubPlace>
+            <placeName ref="#Milano">Milano</placeName>
+          </pubPlace>
+          <publisher>Centro di documentazione ebraica contemporanea</publisher>
+          <date when="1966">1966</date>
+        </bibl>
+
+        <bibl xml:lang="it">
+          <title>Tre vite dall'ultimo '800 alla metà del '900</title>
+          <title type="sub">studi e memorie di Emilio, Emanuele, Ennio Artom</title>
+          <author>
+            <persName>
+              <forename>Benvenuta</forename>
+              <surname>Treves</surname>
+            </persName>
+          </author>
+          <pubPlace>
+            <placeName ref="#Firenze">Firenze</placeName>
+          </pubPlace>
+          <publisher>Israel</publisher>
+          <date when="1954">1954</date>
+        </bibl>
+
+        <bibl xml:lang="it">
+          <title>Eloisa e il CDEC</title>
+          <title type="sub">Liliana Picciotto Fargion , edito in «La rassegna mensile di Israel, terza serie, vol. 47.1/6</title>
+          <author>
+            <persName>
+              <forename>Liliana</forename>
+              <surname>Picciotto Fargion</surname>
+            </persName>
+          </author>
+          <pubPlace>
+            <placeName ref="#Milano">Milano</placeName>
+          </pubPlace>
+          <publisher>Centro di documentazione ebraica contemporanea</publisher>
+          <date when="1981">1981</date>
+        </bibl>
+      </listBibl>
+    </back>
+  </text>
+</TEI>

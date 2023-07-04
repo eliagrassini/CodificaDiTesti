@@ -1,0 +1,262 @@
+/* font */
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Ysabeau+SC:wght@300&display=swap');
+
+p, a {
+    font-family: 'Libre Baskerville', serif ;
+}
+h1{
+    font-family:'Ysabeau SC', sans-serif;
+    color:#d33918
+}
+h2 {
+    font-family:'Ysabeau SC', sans-serif;
+}
+
+h3{
+    font-family: 'Libre Baskerville', serif;
+}
+
+
+/*
+body {
+    margin: 0!important;
+    background-color: rgb(255, 250, 250);
+  }
+*/
+/* Header */
+.header{
+    background-color:  	#ffe4b5;
+    display: flex; 
+    align-items: center;
+    font-family: 'Ysabeau SC', sans-serif ;
+
+}
+
+/*menu*/
+.menu ul {
+    list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+  
+.menu li {
+    display: inline-block;
+  }
+
+.menu a {
+    float: left;
+    display: block;
+    color: #d33918;
+    text-align: center;
+    padding: 0;
+}
+  
+.menu a:hover {
+    background: #d33918;
+    color: #e6dc26;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 1024px){
+
+    /* Header */
+    #header{flex-wrap: wrap;}
+   
+    footer h3, footer p, .block {display: block;}
+}
+
+
+/* bottoni */
+#lista_bottoni{
+    border: 6px;
+    border-radius:10px;
+    margin: 5px;
+    padding: 1em 2.5em;
+    display:auto;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif ;
+}
+
+#lista_bottoni > button:hover {
+    text-align: center;
+    transition: 0.2s;
+    box-shadow:5px 5px 5px rgb(163, 157, 157);
+	transform:scale(1.1,1.1);
+}
+
+.expan, .corr span, u{
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+ .del, .expan, .corr, .none {
+    display: none;
+}
+
+.inline_block, .line_through, .purple {
+    display: inline-block;
+}
+
+.del {
+    text-decoration: line-through;
+    background-color: rgb(	100,149,237);
+}
+
+
+#cancellazioni{
+    background-color: rgb(	100,149,237);
+    padding: 5px;
+    margin: 4px;
+    border-radius:10px;
+}
+
+
+#aggiunte, .lightblue {
+    background-color: rgb(131, 193, 235);
+    padding: 5px;
+    margin: 4px;
+    border-radius:10px;
+}
+
+#correzioni, .corr {
+    background-color: rgb(21, 161, 89);
+    padding: 5px;
+    margin: 4px;
+    border-radius:10px;
+}
+
+#abbreviazioni, .expan {
+    background-color: rgb(129, 230, 83);
+    padding: 5px;
+    margin: 4px;
+    border-radius:10px;
+}
+
+#termini, .magenta {
+    background-color: rgb(230, 83, 191);
+    padding: 5px;
+    margin: 4px;
+    border-radius:10px;
+}
+
+
+#luoghi, .light_coral {
+    background-color: rgb(233, 73, 110);
+    padding: 5px;
+    margin: 4px;
+    border-radius:10px; 
+}
+
+#infogen {
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+    box-shadow: 5px 5px 5px 5px #f08080;
+    background-color:  	#ffe4b5;
+    
+}
+#EA {
+    text-align: center;
+    width:25%;
+    margin-top: 5%;
+    
+    
+}
+#infodescr {
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-shadow: 5px 5px 5px 5px #f08080;
+    background-color:  	#ffe4b5;
+}
+#copertina {
+    text-align: center;
+    width: 60%;
+    margin-top: 5%;
+    
+}
+#infostoria {
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-shadow: 5px 5px 5px 5px#f08080;
+    background-color:  	#ffe4b5;
+    
+}
+#TP {
+    text-align: center;
+    width: 50%;
+    margin-top: 5%;
+}
+#terminologia, #bibliografia, #Pag80, #Pag81, #Pag82, #Pag83, #Pag84{
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-shadow: 5px 5px 5px 5px #f08080;
+    background-color:  	#ffe4b5;
+    
+}
+
+
+
+body {
+    margin: 0!important;
+    background-color:  #deb887; 
+    color: rgb(13, 9, 31);
+    font-family: 'Libre Baskerville', serif;
+}
+footer {
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    margin-top: 5%;
+    
+    padding-top: 3%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-shadow: 5px 5px 5px 5px #f08080;
+    background-color:  	#ffe4b5;
+}
+
+
+
+#Pag80 img {
+    width: 500px;
+   
+}
+
+#Pag81 img {
+    width: 500px;
+   
+}
+
+#Pag82 img {
+    width: 500px;
+   
+}
+
+#Pag83 img {
+    width: 500px;
+   
+}
+
+#Pag84 img {
+    width: 500px;
+   
+}
